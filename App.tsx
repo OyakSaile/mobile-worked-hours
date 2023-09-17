@@ -1,11 +1,16 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View, Platform } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { ProfileScreen } from "./src/screens/profile";
+import { Providers } from "./src/providers";
 
 export default function App() {
   return (
-    <View>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <Providers>
       <StatusBar style="auto" />
-    </View>
+      <SafeAreaView>
+        <ProfileScreen />
+      </SafeAreaView>
+    </Providers>
   );
 }
