@@ -1,44 +1,41 @@
-import { Text, View } from "react-native";
+import { View } from 'react-native'
 import {
+  ButtonGoCreateNewHour,
   Container,
+  CreateNewHourContainer,
+  GreetingText,
   Name,
   ProfileImage,
   ProfileResume,
-  GreetingText,
-  Title,
-  TodayText,
+  ProjectResumeContainer,
+  ProjectResumeInformation,
+  ProjectResumeTitle,
+  ProjectsInformations,
   ResumeInformations,
+  SubTitleCreateHour,
+  Summary,
+  Title,
+  TitleCreateHour,
+  TodayText,
   TotalContainer,
   TotalText,
-  Summary,
-  ProjectResumeContainer,
-  ProjectsInformations,
-  ProjectResumeTitle,
-  ProjectResumeInformation,
-  CreateNewHourContainer,
-  TitleCreateHour,
-  SubTitleCreateHour,
-  ButtonGoCreateNewHour,
-} from "./styles";
+} from './styles'
 
-import { AntDesign } from "@expo/vector-icons";
+import { AntDesign, Ionicons, SimpleLineIcons } from '@expo/vector-icons'
 
-import React from "react";
-import { useLanguage } from "../../hooks/useLanguage";
-import { texts } from "./content/texts";
-import { capitalizeFirstLetter } from "../../utils/capitalizeFirstLetter";
-import { Ionicons } from "@expo/vector-icons";
-import { Fontisto } from "@expo/vector-icons";
-import { SimpleLineIcons } from "@expo/vector-icons";
+import React from 'react'
+import { useLanguage } from '../../hooks/useLanguage'
+import { capitalizeFirstLetter } from '../../utils/capitalizeFirstLetter'
+import { texts } from './content/texts'
 
 export const ProfileScreen = () => {
-  const { language } = useLanguage();
+  const { language } = useLanguage()
   const actualDate = new Date().toLocaleDateString(
-    language === "pt" ? "pt-BR" : "en-US",
+    language === 'pt' ? 'pt-BR' : 'en-US',
     {
-      weekday: "long",
-    }
-  );
+      weekday: 'long',
+    },
+  )
 
   return (
     <Container>
@@ -50,7 +47,7 @@ export const ProfileScreen = () => {
           <Name>Kayo</Name>
           <TodayText>{capitalizeFirstLetter(actualDate)}</TodayText>
         </View>
-        <ProfileImage source={{ uri: "https://github.com/oyaksaile.png" }} />
+        <ProfileImage source={{ uri: 'https://github.com/oyaksaile.png' }} />
       </ProfileResume>
 
       <ResumeInformations>
@@ -92,5 +89,5 @@ export const ProfileScreen = () => {
         </View>
       </CreateNewHourContainer>
     </Container>
-  );
-};
+  )
+}

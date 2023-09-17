@@ -1,8 +1,7 @@
-import { StatusBar } from "expo-status-bar";
-import { Text, View, Platform } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { ProfileScreen } from "./src/screens/profile";
-import { Providers } from "./src/providers";
+import { StatusBar } from 'expo-status-bar'
+import { SafeAreaView } from 'react-native-safe-area-context'
+import { ProfileScreen } from './src/screens/profile'
+import { Providers } from './src/providers'
 
 export default function App() {
   return (
@@ -12,5 +11,5 @@ export default function App() {
         <ProfileScreen />
       </SafeAreaView>
     </Providers>
-  );
+  )
 }
