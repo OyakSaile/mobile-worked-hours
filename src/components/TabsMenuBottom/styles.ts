@@ -6,7 +6,7 @@ export const Container = styled.View`
   width: 100%;
   right: 0;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 16px;
 `
 

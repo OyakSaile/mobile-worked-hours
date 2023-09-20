@@ -14,7 +14,7 @@ export const TabsMenuBottom = () => {
 
       <ContainerIcon>
         <AntDesign name="search1" size={24} color="black" />
-        <Text>Search</Text>
+        <Text>Pesquisar</Text>
       </ContainerIcon>
       <ContainerIcon>
         <AntDesign name="pluscircle" size={24} color="black" />
