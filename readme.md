@@ -5,6 +5,10 @@
 [] - Deve ser possível excluir uma hora trabalhada.
 [] - Deve calcular as horas trabalhadas
 [] - Deve ser possível inserir 1 valor para hora trabalhada.
+[X] - Deve existir 1 tela de visualizar perfil.
+[] - Deve ser possível Editar o Perfil
+[] - Deve ser possível baixar 1 resumo das horas trabalhadas.
+[] - Deve ter 1 menu abaixo.
 
 #RN
 
